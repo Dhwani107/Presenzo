@@ -56,6 +56,16 @@ def style_base_layout():
             font-weight: bolder !important;
             margin: 0 0 1rem 0;
         }
+            h3 {
+            font-family: 'Playfair Display', cursive !important;
+            font-size: 3rem !important;
+            line-height: 1 !important;
+            text-align: left !important;
+            color: #6e6e6e !important;
+            font-weight: bolder !important;
+            
+        }
+
 
         h1 {
             font-family: 'Playfair Display', cursive !important;
@@ -152,6 +162,46 @@ def style_base_layout():
             color: #2f2f2f !important;
             transform: translateY(-3px) scale(1.02) !important;
             box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18) !important;
+        }
+
+        /* Teacher registration form styling */
+        div[data-testid="stTextInput"] label {
+            color: #1f1f1f !important;
+            font-weight: 700 !important;
+        }
+
+        div[data-testid="stTextInput"] input {
+            background-color: #f5f7fa !important;
+            color: #1f1f1f !important;
+        }
+
+        div[data-testid="stTextInput"] input::placeholder {
+            color: #c4ccd6 !important;
+            opacity: 1 !important;
+        }
+
+        /* Override global button style for password visibility toggle */
+        div[data-testid="stTextInput"] button {
+            background-color: #f5f7fa !important;
+            border: 1px solid #d6dde8 !important;
+            border-radius: 8px !important;
+            box-shadow: none !important;
+            color: #5b6470 !important;
+            margin: 0 !important;
+            padding: 0.35rem 0.6rem !important;
+            transform: none !important;
+        }
+
+        div[data-testid="stTextInput"] button:hover {
+            background-color: #eef2f7 !important;
+            border-color: #c8d2de !important;
+            color: #3f4854 !important;
+            transform: none !important;
+            box-shadow: none !important;
+        }
+
+        div[data-testid="stTextInput"] button svg {
+            fill: #5b6470 !important;
         }
 
         </style>
