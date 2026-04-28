@@ -10,7 +10,8 @@ def header_home():
     st.markdown(
         f"""
         <div style="text-align:center;">
-        <img src='data:image/png;base64,{logo_url}' style="height:100px;"/>
+        <img src='data:image/png;base64,{logo_url}' style="height:100px; border-color: #060202; border-width: 2px; border-style: solid; border-radius: 5px; background-color: #28231D;" alt="Logo"
+        "/>
         </div>
         """,
         unsafe_allow_html=True,
